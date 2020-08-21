@@ -1,3 +1,4 @@
+![citydefend](https://github.com/zxl6852/CityDefense/blob/master/src/assets/images/citydefend.png "citydefend") 
 # CityDefense城市保衛戰
 >
 > 不明生物出現，快建造砲塔來抵擋入侵。
