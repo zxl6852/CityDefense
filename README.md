@@ -7,3 +7,6 @@
 > 每殺死三隻生物會進一關，生物會越來越強，升級和砲塔價錢也會提高，HP歸零就輸了。
 >
 > 在方格內建造砲塔，並通過下面不同屬性升級來強化。
+
+### 遊玩:
+> http://htmlpreview.github.io/?https://github.com/zxl6852/CityDefense/blob/pages/dist/index.html
