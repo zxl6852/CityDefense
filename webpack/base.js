@@ -21,7 +21,27 @@ module.exports = {
       },
       {
         test: /\.(gif|png|jpe?g|svg|xml)$/i,
-        use: "file-loader"
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './assets/image'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(mp3|wav|wma|ape|aac)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './assets/music'
+            }
+          }
+        ]
       }
     ]
   },

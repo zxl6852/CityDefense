@@ -1,3 +1,37 @@
+
+// const imPath = 'assets/images/';
+// const muPath = 'assets/musics/';
+
+//open
+import startI from './assets/images/start.jpg';
+import citydefendI from './assets/images/citydefend.png';
+import goI from './assets/images/go.png';
+import opM from './assets/musics/op.mp3';
+import clickM from './assets/musics/click.wav';
+//start
+import enemyI from './assets/images/enemy.png';
+import TurretI from './assets/images/Turret.png';
+import bulletI from './assets/images/bullet.png';
+import greenGroundI from './assets/images/greenGround.jpg';
+import stoneFloorI from './assets/images/stoneFloor.png';
+import boomI from './assets/images/boom.png';
+import downBar1I from './assets/images/downBar1.jpg';
+import downBar2I from './assets/images/downBar2.jpg';
+import downBar3I from './assets/images/downBar3.jpg';
+import downBar4I from './assets/images/downBar4.jpg';
+import upupI from './assets/images/upup.png';
+import bgmM from './assets/musics/bg.mp3';
+import btmM from './assets/musics/bullet.mp3';
+import boomMM from './assets/musics/boom.wav';
+import upEffectM from './assets/musics/upEffect.mp3';
+import hitM from './assets/musics/hit.mp3';
+//end
+import GameOverI from './assets/images/GameOver.png';
+import btAgainI from './assets/images/button_again.png';
+import btEndI from './assets/images/button_end.png';
+import endBgI from './assets/images/end.jpg';
+import endM from './assets/musics/end.mp3';
+
 import Phaser from "phaser";
 import Enemy from './Enemy.js';
 import Turret from './Turret.js';
@@ -59,13 +93,11 @@ class Openstate extends Phaser.Scene {
   }
 
   preload() {
-    const imPath = 'assets/images/';
-    const muPath = 'assets/musics/';
-    this.load.image('start', imPath + 'start.jpg');
-    this.load.image('citydefend', imPath + 'citydefend.png');
-    this.load.image('go', imPath + 'go.png');
-    this.load.audio('op', muPath + 'op.mp3');
-    this.load.audio('click', muPath + 'click.wav');
+    this.load.image('start', startI);
+    this.load.image('citydefend', citydefendI);
+    this.load.image('go', goI);
+    this.load.audio('op', opM);
+    this.load.audio('click', clickM);
   }
 
   create() {
@@ -138,32 +170,29 @@ class Startstate extends Phaser.Scene {
   }
 
   preload() {
-    const imPath = 'assets/images/';
-    const muPath = 'assets/musics/';
-
-    this.load.image('enemy', imPath + 'enemy.png');
-    this.load.image('Turrets', imPath + 'Turret.png');
+    this.load.image('enemy', enemyI);
+    this.load.image('Turrets', TurretI);
     //子彈
-    this.load.image('bullet', imPath + 'bullet.png');
+    this.load.image('bullet', bulletI);
     //綠地
-    this.load.image('greenGround', imPath + 'greenGround.jpg');
+    this.load.image('greenGround', greenGroundI);
     //石地
-    this.load.image('stoneFloor', imPath + 'stoneFloor.png');
-    this.load.image('boom', imPath + 'boom.png');
-    this.load.image('downBar1', imPath + 'downBar1.jpg');
-    this.load.image('downBar2', imPath + 'downBar2.jpg');
-    this.load.image('downBar3', imPath + 'downBar3.jpg');
-    this.load.image('downBar4', imPath + 'downBar4.jpg');
-    this.load.image('upup', imPath + 'upup.png');
+    this.load.image('stoneFloor', stoneFloorI);
+    this.load.image('boom', boomI);
+    this.load.image('downBar1', downBar1I);
+    this.load.image('downBar2', downBar2I);
+    this.load.image('downBar3', downBar3I);
+    this.load.image('downBar4', downBar4I);
+    this.load.image('upup', upupI);
 
     //背景音樂
-    this.load.audio('bgm', muPath + 'bg.mp3');
+    this.load.audio('bgm', bgmM);
     //子彈
-    this.load.audio('btm', muPath + 'bullet.mp3');
+    this.load.audio('btm', btmM);
     //敵人死亡
-    this.load.audio('boom', muPath + 'boom.wav');
-    this.load.audio('upEffect', muPath + 'upEffect.mp3');
-    this.load.audio('hit', muPath + 'hit.mp3');
+    this.load.audio('boom', boomMM);
+    this.load.audio('upEffect', upEffectM);
+    this.load.audio('hit', hitM);
 
 
   }
@@ -486,13 +515,11 @@ class Endstate extends Phaser.Scene {
   }
 
   preload() {
-    const imPath = 'assets/images/';
-    const muPath = 'assets/musics/';
-    this.load.image('GameOver', imPath + 'GameOver.png');
-    this.load.image('btAgain', imPath + 'button_again.png');
-    this.load.image('btEnd', imPath + 'button_end.png');
-    this.load.image('endBg', imPath + 'end.jpg');
-    this.load.audio('end', muPath + 'end.mp3');
+    this.load.image('GameOver', GameOverI);
+    this.load.image('btAgain', btAgainI);
+    this.load.image('btEnd', btEndI);
+    this.load.image('endBg', endBgI);
+    this.load.audio('end', endM);
   }
   create() {
     bgm.stop();
